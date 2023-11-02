@@ -1,0 +1,1 @@
+## movie search app using omdb api and react js ##
