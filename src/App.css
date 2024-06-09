@@ -8,34 +8,22 @@ body {
 	color: #ffffff;
 }
 
-.movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
-    
 
-	/* border:2px solid white */
-}
-
-.image-container {
+.movie-container {
 	position: relative;
 	transition: transform 0.2s;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    width:30%;
-	height: 60%;
 	/* border: 2px solid yellow; */
 }
 
 
 
 
-.image-container:hover {
+.movie-container:hover {
 	cursor: pointer;
 	transform: scale(1.1);
 }
 
-.image-container:hover .overlay {
+.movie-container:hover .overlay {
 	opacity: 1;
 }
 
@@ -45,14 +33,27 @@ body {
 	width: 100%;
 	transition: 0.5s ease;
 	opacity: 0;
+	left:0;
 	bottom: 0;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
+	font-size: 1.5rem;
+	border:none;
+	height:8vh;
+	color:white;
 }
 
-/* .movie-list{
-	border: 2px solid red;
-} */
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:20px;
+
+}
+
+@media (max-width:600px){
+	header{
+		flex-direction: column;
+		gap:10px;
+	}
+}
 
 
